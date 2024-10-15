@@ -82,7 +82,7 @@ const logout = () => {
 </script>
 
 <style scoped>
-/* Contenedor principal */
+
 .home-container {
   display: flex;
   justify-content: center;
@@ -92,57 +92,57 @@ const logout = () => {
   padding: 10px;
 }
 
-/* Tarjeta con los paneles */
+
 .card {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  padding: 15px; /* Reducido para compactar */
-  width: 85%; /* Mantener el tamaño general */
-  max-width: 350px; /* Máximo ancho más pequeño */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más ligera */
+  padding: 15px;
+  width: 85%; 
+  max-width: 350px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
-/* Paneles internos para separación */
+
 .panel {
-  margin-bottom: 10px; /* Reducido para mayor compacidad */
-  padding: 10px; /* Reducido para mayor compacidad */
+  margin-bottom: 10px; 
+  padding: 10px; 
   background: rgba(255, 255, 255, 0.15);
-  border-radius: 6px; /* Bordes más suaves */
+  border-radius: 6px; 
 }
 
-/* Títulos */
+
 h1, h2, h3 {
   color: #ffffff;
-  margin: 5px 0; /* Menor margen */
+  margin: 5px 0; 
 }
 
-/* Listado de usuarios */
+
 ul {
   list-style: none;
   padding: 0;
-  margin: 0 0 5px 0; /* Reducido margen inferior */
+  margin: 0 0 5px 0; 
 }
 
-/* Inputs y selects */
+
 input, select {
   width: calc(100% - 14px);
-  padding: 8px; /* Menos padding */
-  margin: 4px 0; /* Menos margen */
-  border-radius: 4px; /* Bordes más suaves */
+  padding: 8px; 
+  margin: 4px 0; 
+  border-radius: 4px; 
   border: none;
-  background-color: #444; /* Color de fondo más oscuro */
-  color: white; /* Texto en blanco */
+  background-color: #444; 
+  color: white; 
 }
 
-/* Botones */
+
 button {
   width: 100%;
-  padding: 8px; /* Menos padding */
-  margin-top: 5px; /* Menor margen */
+  padding: 8px; 
+  margin-top: 5px; 
   background-color: #5e0404;
   color: white;
   border: none;
-  border-radius: 4px; /* Bordes más suaves */
+  border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
@@ -151,12 +151,12 @@ button:hover {
   background-color: #4c2f8b;
 }
 
-/* Información del usuario */
+
 .user-info {
-  margin-bottom: 5px; /* Menor margen */
+  margin-bottom: 5px; 
 }
 
 .admin-info {
-  margin-top: 5px; /* Menor margen */
+  margin-top: 5px; 
 }
 </style>

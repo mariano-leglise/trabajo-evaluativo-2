@@ -1,4 +1,4 @@
-// src/stores/authStore.ts
+
 import { defineStore } from 'pinia';
 import { Sesion } from '../models/Sesion';
 
@@ -6,7 +6,7 @@ export const useAuthStore = defineStore('auth', {
   state: () => ({}),
   actions: {
     async login(username: string, password: string): Promise<Sesion> {
-      console.log('Intentando login con:', username, password); // Depuración
+      console.log('Intentando login con:', username, password); 
 
       const response = await fakeApiLogin(username, password);
       if (response) {
@@ -28,14 +28,14 @@ export const useAuthStore = defineStore('auth', {
 
 // Simulación de llamada a la API
 async function fakeApiLogin(username: string, password: string) {
-  console.log('Verificando credenciales...', username, password); // Depuración
+  console.log('Verificando credenciales...', username, password); 
 
   if (username === 'mariano' && password === '123') {
     console.log('Credenciales válidas para Mariano'); // Confirmación
     return { token: 'fake-token', nombre: 'Mariano', rol: 'administrador' }; // Simula una respuesta exitosa
   } else if (username === 'juan' && password === '123') {
     console.log('Credenciales válidas para Juan'); // Confirmación
-    return { token: 'fake-token-juan', nombre: 'Juan', rol: 'usuario' }; // Simula una respuesta exitosa para Juan
+    return { token: 'fake-token-juan', nombre: 'Juan', rol: 'usuario' };
   } else {
     console.log('Credenciales inválidas'); // Si no coinciden
     return null; // Simula un fallo en la autenticación
